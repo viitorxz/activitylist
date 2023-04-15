@@ -14,7 +14,9 @@ async function bootstrapt() {
       port: 3001,
     })
     .then(() =>
-      console.log(`Running on port ${3001} [${app.server.address()}]`),
+      console.log(
+        `Running on port ${3001} [${JSON.stringify(app.server.address())}]`,
+      ),
     )
 }
 
