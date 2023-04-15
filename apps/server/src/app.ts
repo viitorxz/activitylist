@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import Fastify from 'fastify'
 import fastifyCors from '@fastify/cors'
 import { routes } from './routes'
@@ -11,7 +12,8 @@ async function bootstrapt() {
 
   app
     .listen({
-      port: 3001,
+      port: 3003,
+      host: process.env.BACKEND_IP || '0.0.0.0',
     })
     .then(() =>
       console.log(
