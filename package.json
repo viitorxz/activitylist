@@ -2,11 +2,14 @@
   "name": "todolist",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
   "description": "",
   "main": "index.js",
   "author": "jvitorsantana <eu@jvitorsantana.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": "18"
+  }
 }
