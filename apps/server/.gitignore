@@ -17,6 +17,4 @@ experimental/**/*.db
 .next
 .vscode/
 .nuxt
-prisma/migrations
-prisma/dev.db
 *.env*
